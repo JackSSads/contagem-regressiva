@@ -41,14 +41,14 @@
     <div id="countdown"></div>
 
     <script>
-        const finalDate = new Date('2026-09-24T23:59:59');
+        const finalDate = new Date('2025-09-24T23:59:59');
 
         function updateCountdown() {
             const currentDate = new Date();
             const timeDifference = finalDate - currentDate;
 
             if (timeDifference <= 0) {
-                document.getElementById('countdown').innerHTML = 'Contagem regressiva encerrada!';
+                document.getElementById('countdown').innerHTML = 'Chegou o dia 😍';
             } else {
                 const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
